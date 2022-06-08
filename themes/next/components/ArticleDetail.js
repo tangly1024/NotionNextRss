@@ -51,7 +51,7 @@ export default function ArticleDetail(props) {
               </Link>
               <span className='mr-2'>|</span>
             </>}
-            {post?.type[0] !== 'Page' && (<>
+            {post?.type?.[0] !== 'Page' && (<>
               <Link
                 href={`/archive#${post?.date?.start_date?.substr(0, 7)}`}
                 passHref
